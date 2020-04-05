@@ -1,6 +1,5 @@
 FROM golang:1.14.0-buster as builder
 WORKDIR /go/src/app
-ADD config config
 ADD src src
 RUN (cd src && go mod download)
 RUN (cd src && CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o /go/src/app/main main.go)
