@@ -10,7 +10,7 @@ API for Checklist webapp
 `DATABASE_SSL_MODE=<enable|disable>`  
 `DATABASE_DIALECT=<postgres|mysql|etc..>` (if other than postgres it must be imported in main.go)  
 
-# Optional Environment Variables
+## Optional Environment Variables
 `DATABASE_LOGMODE=true` (enable more verbose query logging)
 
 ## Docker
